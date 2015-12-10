@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create a profile</title>
+    <style>
+    body {background-color: yellowgreen; margin-left: 75px; margin-right: 75px; margin-top: 25px}
+    form {color:black;}
+    input, textarea {color:darkgreen;}
+
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Welcome to the College Mascot Dating Site!</h1>
+    <h2>Create your profile</h2>
+    <form action="/profile">
+
+      Profile heading: <input name="heading"><br>
+      Your name: <input name="name"><br>
+      Favorite color: <input name="fav_color"><br>
+      Favorite food: <input name="fav_food"><br>
+      Favorite song: <input name="fav_song"><br>
+      Enter a URL for your picture: <input name="pic_url"><br>
+      Tell us more about you: <textarea name="aboutme"></textarea><br>
+
+      <button type="submit">Generate Profile</button>
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Your Profile</title>
+    <style>
+      body {background-color: yellowgreen; margin-left: 75px; margin-right: 75px; margin-top: 25px}
+      img {margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 140px;}
+      div.email {background-color: white; padding: 5px}
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1><%= params['heading'] %></h1>
+      <p> <img src="<%= params['pic_url'] %>" alt="user picture"></p>
+      <h3>Name: <%= params['name'] %></h3>
+      <h3>Favorite color: <%= params['fav_color'] %></h3>
+      <h3>Favorite food: <%= params['fav_food'] %></h3>
+      <h3>Favorite song: <%= params['fav_song'] %></h3>
+      <h3>More about <%= params['name'] %>: <%= params['aboutme'] %></h3>
+    </div>
+
+    <div class="email">
+      <p>Interested in connecting with <%= params['name'] %>? Enter your name and e-mail below and he'll know you are interested!</p>
+      <form action="//formspree.io/watkin36@yahoo.com"
+        method="POST">
+        Your name: <input type="text" name="name"><br>
+        Your e-mail: <input type="email" name="_replyto"><br>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+
+
+  </body>
+</html>
